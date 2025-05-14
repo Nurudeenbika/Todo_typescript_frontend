@@ -7,6 +7,7 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 class AuthService {
   async register(username: string, email: string, password: string): Promise<{
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     token: any; userId: string; username: string; email: string 
 }> {
     try {

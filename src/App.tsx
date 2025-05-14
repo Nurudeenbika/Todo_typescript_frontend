@@ -10,7 +10,7 @@ import 'primeicons/primeicons.css';
 
 const PrivateRoute = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated } = useAuth();
-  return isAuthenticated ? children : <Navigate to="/login" />;
+  return isAuthenticated ? children : <Navigate to="/auth/login" />;
 };
 
 const App: React.FC = () => {
