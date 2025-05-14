@@ -61,7 +61,7 @@ const LoginPage: React.FC = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#111827',
+        backgroundColor: 'white',
         padding: '1rem',
         position: 'absolute',
         top: 0,
@@ -77,14 +77,15 @@ const LoginPage: React.FC = () => {
         style={{
           width: '100%',
           maxWidth: '400px',
-          backgroundColor: '#1f2937',
-          color: 'white',
-          border: '1px solid #374151',
+          backgroundColor: 'gray',
+          color: 'black',
+          border: '1px solid gray',
         }}
       >
+        <br />
         <form onSubmit={handleSubmit} className="p-fluid" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div>
-            <label htmlFor="email" style={{ color: 'white', marginBottom: '0.5rem', display: 'block' }}>
+            <label htmlFor="email" style={{ color: 'black', marginBottom: '0.5rem', display: 'block' }}>
               Email
             </label>
             <InputText
@@ -98,7 +99,7 @@ const LoginPage: React.FC = () => {
             />
           </div>
           <div>
-            <label htmlFor="password" style={{ color: 'white', marginBottom: '0.5rem', display: 'block' }}>
+            <label htmlFor="password" style={{ color: 'black', marginBottom: '0.5rem', display: 'block' }}>
               Password
             </label>
             <Password
@@ -119,7 +120,7 @@ const LoginPage: React.FC = () => {
             loading={loading}
             className="p-button-primary"
           />
-          <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>
+          <p style={{ color: 'black', fontSize: '0.875rem' }}>
             Don't have an account?{' '}
             <a href="/auth/register" style={{ color: '#60a5fa', textDecoration: 'underline' }}>
               Register

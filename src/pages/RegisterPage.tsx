@@ -63,7 +63,7 @@ const RegisterPage: React.FC = () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#111827',
+    backgroundColor: 'white',
     padding: '1rem',
     position: 'absolute',
     top: 0,
@@ -79,14 +79,15 @@ const RegisterPage: React.FC = () => {
         style={{
           width: '100%',
           maxWidth: '400px',
-          backgroundColor: '#1f2937',
-          color: 'white',
-          border: '1px solid #374151',
+          backgroundColor: 'gray',
+          color: 'black',
+          border: '1px solid gray',
         }}
       >
+        <br />
         <form onSubmit={handleSubmit} className="p-fluid" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <div>
-            <label htmlFor="username" style={{ color: 'white', marginBottom: '0.5rem', display: 'block' }}>
+            <label htmlFor="username" style={{ color: 'black', marginBottom: '0.5rem', display: 'block' }}>
               Username
             </label>
             <InputText
@@ -99,7 +100,7 @@ const RegisterPage: React.FC = () => {
             />
           </div>
           <div>
-            <label htmlFor="email" style={{ color: 'white', marginBottom: '0.5rem', display: 'block' }}>
+            <label htmlFor="email" style={{ color: 'black', marginBottom: '0.5rem', display: 'block' }}>
               Email
             </label>
             <InputText
@@ -113,7 +114,7 @@ const RegisterPage: React.FC = () => {
             />
           </div>
           <div>
-            <label htmlFor="password" style={{ color: 'white', marginBottom: '0.5rem', display: 'block' }}>
+            <label htmlFor="password" style={{ color: 'black', marginBottom: '0.5rem', display: 'block' }}>
               Password
             </label>
             <Password
